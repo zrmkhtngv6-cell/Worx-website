@@ -1,6 +1,20 @@
 // WhatsApp number used by the quote form (international format, digits only)
 const WHATSAPP_NUMBER = '201117776589';
 
+// Text set from script, per page language (index.html = en, ar.html = ar)
+const STRINGS = {
+  en: {
+    openMenu: 'Open menu', closeMenu: 'Close menu', soundOn: 'Sound on', soundOff: 'Sound off',
+    waIntro: 'Hello WORX, I would like a free quote.', waName: 'Name', waPhone: 'Phone', waAddress: 'Address', waMessage: 'Message',
+  },
+  ar: {
+    openMenu: 'فتح القائمة', closeMenu: 'إغلاق القائمة', soundOn: 'تشغيل الصوت', soundOff: 'كتم الصوت',
+    waIntro: 'مرحباً WORX، أود الحصول على عرض سعر مجاني.', waName: 'الاسم', waPhone: 'الهاتف', waAddress: 'العنوان', waMessage: 'الرسالة',
+  },
+};
+const t = STRINGS[document.documentElement.lang] || STRINGS.en;
+const rtl = document.documentElement.dir === 'rtl';
+
 const header = document.querySelector('.header');
 const nav = document.getElementById('nav');
 const toggle = document.getElementById('navToggle');
@@ -9,7 +23,7 @@ const toggle = document.getElementById('navToggle');
 toggle.addEventListener('click', () => {
   const open = nav.classList.toggle('is-open');
   toggle.setAttribute('aria-expanded', open);
-  toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  toggle.setAttribute('aria-label', open ? t.closeMenu : t.openMenu);
 });
 nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   nav.classList.remove('is-open');
@@ -92,15 +106,15 @@ lightbox.addEventListener('click', e => { if (e.target === lightbox || e.target.
 document.addEventListener('keydown', e => {
   if (lightbox.hidden) return;
   if (e.key === 'Escape') closeLightbox();
-  if (e.key === 'ArrowLeft') show(current - 1);
-  if (e.key === 'ArrowRight') show(current + 1);
+  if (e.key === 'ArrowLeft') show(current + (rtl ? 1 : -1));
+  if (e.key === 'ArrowRight') show(current + (rtl ? -1 : 1));
 });
 let touchX = null;
 lightbox.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
 lightbox.addEventListener('touchend', e => {
   if (touchX === null) return;
   const dx = e.changedTouches[0].clientX - touchX;
-  if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1));
+  if (Math.abs(dx) > 50) show(current + ((dx < 0) !== rtl ? 1 : -1));
   touchX = null;
 });
 
@@ -110,7 +124,7 @@ const soundToggle = document.getElementById('soundToggle');
 soundToggle.addEventListener('click', () => {
   tour.muted = !tour.muted;
   if (!tour.muted) tour.play();
-  soundToggle.textContent = tour.muted ? 'Sound on' : 'Sound off';
+  soundToggle.textContent = tour.muted ? t.soundOn : t.soundOff;
   soundToggle.setAttribute('aria-pressed', !tour.muted);
 });
 
@@ -125,11 +139,11 @@ document.getElementById('quoteForm').addEventListener('submit', e => {
   e.preventDefault();
   const data = new FormData(e.target);
   const lines = [
-    'Hello WORX, I would like a free quote.',
-    `Name: ${data.get('name')}`,
-    `Phone: ${data.get('phone')}`,
-    data.get('address') && `Address: ${data.get('address')}`,
-    data.get('message') && `Message: ${data.get('message')}`,
+    t.waIntro,
+    `${t.waName}: ${data.get('name')}`,
+    `${t.waPhone}: ${data.get('phone')}`,
+    data.get('address') && `${t.waAddress}: ${data.get('address')}`,
+    data.get('message') && `${t.waMessage}: ${data.get('message')}`,
   ].filter(Boolean);
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
 });
