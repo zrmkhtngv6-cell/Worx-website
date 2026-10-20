@@ -137,7 +137,6 @@ PAIRS = [
     ('alt="Laundry room with washer housing, sink and marble worktop"', 'alt="غرفة غسيل بحاضنة للغسالة وحوض وسطح رخامي"'),
     ('alt="Kitchen island with pendant lights and wood cabinetry"', 'alt="جزيرة مطبخ بإضاءة معلقة وخزائن خشبية"'),
     ('alt="Dark wood kitchen with lit glass display cabinet"', 'alt="مطبخ خشبي داكن بخزانة عرض زجاجية مضاءة"'),
-    ('alt="Open kitchen with white island and wood floors"', 'alt="مطبخ مفتوح بجزيرة بيضاء وأرضية خشبية"'),
     ('alt="Corner cabinet with pull-out carousel shelves"', 'alt="خزانة ركنية برفوف دوّارة منزلقة"'),
     ('id="showMore">Show more projects</button>', 'id="showMore">عرض المزيد من المشاريع</button>'),
 
