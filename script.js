@@ -45,18 +45,52 @@ document.querySelectorAll('.card, .service, .gallery__item, .review, .team li, .
   revealObserver.observe(el);
 });
 
-// Gallery lightbox
+// Gallery filters
+const galleryItems = [...document.querySelectorAll('.gallery__item')];
+document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.filter').forEach(b => {
+    b.classList.toggle('is-active', b === btn);
+    b.setAttribute('aria-pressed', b === btn);
+  });
+  galleryItems.forEach(item => {
+    item.hidden = btn.dataset.filter !== 'all' && item.dataset.cat !== btn.dataset.filter;
+  });
+}));
+
+// Gallery lightbox with prev/next, keyboard and swipe
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = lightbox.querySelector('img');
+let current = 0;
+const visibleItems = () => galleryItems.filter(i => !i.hidden);
+const show = index => {
+  const items = visibleItems();
+  current = (index + items.length) % items.length;
+  lightboxImg.src = items[current].dataset.full;
+  lightboxImg.alt = items[current].querySelector('img').alt;
+};
 const closeLightbox = () => { lightbox.hidden = true; document.body.style.overflow = ''; };
-document.querySelectorAll('.gallery__item').forEach(item => item.addEventListener('click', () => {
-  lightboxImg.src = item.dataset.full;
-  lightboxImg.alt = item.querySelector('img').alt;
+galleryItems.forEach(item => item.addEventListener('click', () => {
+  show(visibleItems().indexOf(item));
   lightbox.hidden = false;
   document.body.style.overflow = 'hidden';
 }));
-lightbox.addEventListener('click', e => { if (e.target !== lightboxImg) closeLightbox(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape' && !lightbox.hidden) closeLightbox(); });
+lightbox.querySelector('.lightbox__prev').addEventListener('click', e => { e.stopPropagation(); show(current - 1); });
+lightbox.querySelector('.lightbox__next').addEventListener('click', e => { e.stopPropagation(); show(current + 1); });
+lightbox.addEventListener('click', e => { if (e.target === lightbox || e.target.classList.contains('lightbox__close')) closeLightbox(); });
+document.addEventListener('keydown', e => {
+  if (lightbox.hidden) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') show(current - 1);
+  if (e.key === 'ArrowRight') show(current + 1);
+});
+let touchX = null;
+lightbox.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+lightbox.addEventListener('touchend', e => {
+  if (touchX === null) return;
+  const dx = e.changedTouches[0].clientX - touchX;
+  if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1));
+  touchX = null;
+});
 
 // Quote form → WhatsApp
 document.getElementById('quoteForm').addEventListener('submit', e => {

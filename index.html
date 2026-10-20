@@ -7,7 +7,7 @@
   <meta name="description" content="WORX Kitchen & Dressing — custom kitchens, dressing rooms, remodels and repairs in New Cairo. Call for a free quote.">
   <meta property="og:title" content="WORX | Kitchen & Dressing">
   <meta property="og:description" content="Your fantasies, our realities. Custom kitchens and dressing rooms in New Cairo.">
-  <meta property="og:image" content="assets/img/hero.jpg">
+  <meta property="og:image" content="assets/img/work/fluted-granite-island.jpg">
   <link rel="icon" href="assets/img/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +43,7 @@
   <main>
     <!-- HERO -->
     <section class="hero">
-      <img class="hero__bg" src="assets/img/hero.jpg" alt="Modern WORX kitchen with wood finishes, white island and glass cabinets">
+      <img class="hero__bg" src="assets/img/work/fluted-granite-island.jpg" srcset="assets/img/work/fluted-granite-island-sm.jpg 720w, assets/img/work/fluted-granite-island.jpg 1600w" sizes="100vw" alt="WORX kitchen with fluted cabinets and a granite waterfall island">
       <div class="hero__overlay"></div>
       <div class="container hero__content">
         <p class="eyebrow eyebrow--light">Kitchen &amp; Dressing · New Cairo</p>
@@ -116,6 +116,24 @@
       </div>
     </section>
 
+    <!-- DETAILS -->
+    <section class="section section--cream" id="details">
+      <div class="container feature">
+        <div class="feature__media">
+          <video poster="assets/img/work/drawer-organizer-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Drawer with a custom wooden cutlery organizer sliding open">
+            <source src="assets/img/work/drawer-organizer.mp4" type="video/mp4">
+            <source src="assets/img/work/drawer-organizer.webm" type="video/webm">
+          </video>
+        </div>
+        <div class="feature__text">
+          <p class="eyebrow">In the details</p>
+          <h2>Made to be used every day</h2>
+          <p>Custom drawer organizers, corner carousel units, built-in lighting and appliance housings — every detail is planned around how you cook, store and live.</p>
+          <a href="#contact" class="btn btn--dark">Plan your space</a>
+        </div>
+      </div>
+    </section>
+
     <!-- GALLERY -->
     <section class="section" id="work">
       <div class="container">
@@ -123,21 +141,70 @@
           <p class="eyebrow">Our Work</p>
           <h2>Recent projects</h2>
         </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="kitchens" aria-pressed="false">Kitchens</button>
+          <button class="filter" data-filter="dressing" aria-pressed="false">Dressing rooms</button>
+          <button class="filter" data-filter="details" aria-pressed="false">Details</button>
+          <button class="filter" data-filter="utility" aria-pressed="false">Utility</button>
+        </div>
         <div class="gallery">
-          <button class="gallery__item gallery__item--wide" data-full="assets/img/kitchen-island.jpg">
+          <button class="gallery__item" data-cat="dressing" data-full="assets/img/work/dressing-walk-in.jpg">
+            <img src="assets/img/work/dressing-walk-in-sm.jpg" alt="Walk-in dressing room with lit glass-door wardrobes in walnut" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/fluted-granite-island.jpg">
+            <img src="assets/img/work/fluted-granite-island-sm.jpg" alt="Beige fluted kitchen with granite waterfall island" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/sage-wood-kitchen.jpg">
+            <img src="assets/img/work/sage-wood-kitchen-sm.jpg" alt="Sage green and oak kitchen with smoked-glass upper cabinets" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/wood-black-bar-stools.jpg">
+            <img src="assets/img/work/wood-black-bar-stools-sm.jpg" alt="Oak and matte black kitchen with breakfast bar and pendant lights" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/white-gloss-display.jpg">
+            <img src="assets/img/work/white-gloss-display-sm.jpg" alt="White gloss L-shaped kitchen with black-framed glass display cabinets" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/wood-grey-l-shape.jpg">
+            <img src="assets/img/work/wood-grey-l-shape-sm.jpg" alt="Walnut and grey L-shaped kitchen with lit glass niches" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="details" data-full="assets/img/work/fluted-cabinet-detail.jpg">
+            <img src="assets/img/work/fluted-cabinet-detail-sm.jpg" alt="Fluted cabinet fronts over a granite backsplash" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/white-wood-breakfast-bar.jpg">
+            <img src="assets/img/work/white-wood-breakfast-bar-sm.jpg" alt="Handleless white kitchen with solid wood breakfast bar" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/wood-glass-display-column.jpg">
+            <img src="assets/img/work/wood-glass-display-column-sm.jpg" alt="Tall walnut units with fridge housing and lit glass display column" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/sage-marble-corner.jpg">
+            <img src="assets/img/work/sage-marble-corner-sm.jpg" alt="Sage green base cabinets, oak uppers and grey marble backsplash" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/grey-wood-tall-units.jpg">
+            <img src="assets/img/work/grey-wood-tall-units-sm.jpg" alt="Light grey kitchen with oak tall units and built-in ovens" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="details" data-full="assets/img/work/built-in-oven.jpg">
+            <img src="assets/img/work/built-in-oven-sm.jpg" alt="Built-in oven in sage green cabinetry under a granite worktop" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/fluted-bosch-ovens.jpg">
+            <img src="assets/img/work/fluted-bosch-ovens-sm.jpg" alt="Fluted beige kitchen with open shelving and built-in ovens" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/work/white-black-hood.jpg">
+            <img src="assets/img/work/white-black-hood-sm.jpg" alt="Handleless white kitchen with angled black glass hood" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="utility" data-full="assets/img/work/laundry-utility.jpg">
+            <img src="assets/img/work/laundry-utility-sm.jpg" alt="Laundry room with washer housing, sink and marble worktop" loading="lazy">
+          </button>
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/kitchen-island.jpg">
             <img src="assets/img/kitchen-island.jpg" alt="Kitchen island with pendant lights and wood cabinetry" loading="lazy">
           </button>
-          <button class="gallery__item gallery__item--tall" data-full="assets/img/gallery-dark.jpg">
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/gallery-dark.jpg">
             <img src="assets/img/gallery-dark.jpg" alt="Dark wood kitchen with lit glass display cabinet" loading="lazy">
           </button>
-          <button class="gallery__item" data-full="assets/img/lazy-susan.jpg">
-            <img src="assets/img/lazy-susan.jpg" alt="Corner cabinet with pull-out carousel shelves" loading="lazy">
-          </button>
-          <button class="gallery__item" data-full="assets/img/hero.jpg">
+          <button class="gallery__item" data-cat="kitchens" data-full="assets/img/hero.jpg">
             <img src="assets/img/hero.jpg" alt="Open kitchen with white island and wood floors" loading="lazy">
           </button>
-          <button class="gallery__item gallery__item--full" data-full="assets/img/service.jpg">
-            <img src="assets/img/service.jpg" alt="Gas hob and island with handleless grey cabinets" loading="lazy">
+          <button class="gallery__item" data-cat="details" data-full="assets/img/lazy-susan.jpg">
+            <img src="assets/img/lazy-susan.jpg" alt="Corner cabinet with pull-out carousel shelves" loading="lazy">
           </button>
         </div>
       </div>
@@ -265,6 +332,8 @@
 
   <div class="lightbox" id="lightbox" hidden>
     <button class="lightbox__close" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Previous photo">‹</button>
+    <button class="lightbox__nav lightbox__next" aria-label="Next photo">›</button>
     <img alt="">
   </div>
 
