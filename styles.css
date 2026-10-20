@@ -125,7 +125,12 @@ h3 { font-size: 1.3rem; }
 /* Feature (video) */
 .feature { display: grid; gap: 2.5rem; align-items: center; }
 @media (min-width: 860px) { .feature { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 5rem; } }
-.feature__media video { width: 100%; max-width: 420px; margin-inline: auto; display: block; aspect-ratio: 9 / 16; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); background: #ddd; }
+.feature__media { display: grid; grid-template-columns: 3fr 2fr; gap: 14px; align-items: start; max-width: 520px; margin-inline: auto; width: 100%; }
+.feature__video { position: relative; }
+.feature__video--side { margin-top: 22%; }
+.feature__video video { width: 100%; display: block; aspect-ratio: 9 / 16; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); background: #ddd; }
+.sound-toggle { position: absolute; left: 10px; bottom: 10px; font: 600 .7rem var(--sans); letter-spacing: .1em; text-transform: uppercase; padding: .5rem .8rem; border-radius: 999px; border: 0; background: rgba(0,0,0,.6); color: #fff; cursor: pointer; }
+.sound-toggle:hover { background: rgba(0,0,0,.8); }
 .feature__text p:not(.eyebrow) { color: var(--ink-soft); font-size: 1.05rem; margin: 0 0 2rem; }
 
 /* Reviews */

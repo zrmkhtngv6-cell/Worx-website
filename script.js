@@ -104,6 +104,16 @@ lightbox.addEventListener('touchend', e => {
   touchX = null;
 });
 
+// Sound toggle for the kitchen tour (browsers only autoplay muted video)
+const tour = document.getElementById('tourVideo');
+const soundToggle = document.getElementById('soundToggle');
+soundToggle.addEventListener('click', () => {
+  tour.muted = !tour.muted;
+  if (!tour.muted) tour.play();
+  soundToggle.textContent = tour.muted ? 'Sound on' : 'Sound off';
+  soundToggle.setAttribute('aria-pressed', !tour.muted);
+});
+
 // Quote form → WhatsApp
 document.getElementById('quoteForm').addEventListener('submit', e => {
   e.preventDefault();
