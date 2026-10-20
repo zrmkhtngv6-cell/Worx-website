@@ -114,6 +114,12 @@ soundToggle.addEventListener('click', () => {
   soundToggle.setAttribute('aria-pressed', !tour.muted);
 });
 
+// Only one tour video plays at a time
+const tourVideos = [...document.querySelectorAll('.video-card video')];
+tourVideos.forEach(v => v.addEventListener('play', () => {
+  tourVideos.forEach(other => { if (other !== v) other.pause(); });
+}));
+
 // Quote form → WhatsApp
 document.getElementById('quoteForm').addEventListener('submit', e => {
   e.preventDefault();
