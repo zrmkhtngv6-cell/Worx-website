@@ -45,17 +45,29 @@ document.querySelectorAll('.card, .service, .gallery__item, .review, .team li, .
   revealObserver.observe(el);
 });
 
-// Gallery filters
+// Gallery filters; "All" starts collapsed to the first few projects
+const GALLERY_PREVIEW = 12;
 const galleryItems = [...document.querySelectorAll('.gallery__item')];
+const showMore = document.getElementById('showMore');
+let activeFilter = 'all';
+let expanded = false;
+const renderGallery = () => {
+  const matches = galleryItems.filter(item => activeFilter === 'all' || item.dataset.cat === activeFilter);
+  const limit = activeFilter === 'all' && !expanded ? GALLERY_PREVIEW : Infinity;
+  galleryItems.forEach(item => { item.hidden = true; });
+  matches.forEach((item, i) => { item.hidden = i >= limit; });
+  showMore.parentElement.hidden = matches.length <= limit;
+};
 document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
   document.querySelectorAll('.filter').forEach(b => {
     b.classList.toggle('is-active', b === btn);
     b.setAttribute('aria-pressed', b === btn);
   });
-  galleryItems.forEach(item => {
-    item.hidden = btn.dataset.filter !== 'all' && item.dataset.cat !== btn.dataset.filter;
-  });
+  activeFilter = btn.dataset.filter;
+  renderGallery();
 }));
+showMore.addEventListener('click', () => { expanded = true; renderGallery(); });
+renderGallery();
 
 // Gallery lightbox with prev/next, keyboard and swipe
 const lightbox = document.getElementById('lightbox');
