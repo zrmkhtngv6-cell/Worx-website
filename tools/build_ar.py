@@ -16,6 +16,8 @@ PAIRS = [
     ('<title>WORX | Kitchen &amp; Dressing — New Cairo</title>', '<title>WORX | مطابخ وغرف ملابس — القاهرة الجديدة</title>'),
     ('content="WORX Kitchen & Dressing — custom kitchens, dressing rooms, remodels and repairs in New Cairo. Call for a free quote."',
      'content="WORX للمطابخ وغرف الملابس — مطابخ وغرف ملابس حسب الطلب، تجديد وإصلاح في القاهرة الجديدة. اتصل بنا لعرض سعر مجاني."'),
+    ('<meta property="og:url" content="https://worxegypt.com/">', '<meta property="og:url" content="https://worxegypt.com/ar.html">\n  <meta property="og:locale" content="ar_EG">'),
+    ('<link rel="canonical" href="https://worxegypt.com/">', '<link rel="canonical" href="https://worxegypt.com/ar.html">'),
     ('<meta property="og:title" content="WORX | Kitchen & Dressing">', '<meta property="og:title" content="WORX | مطابخ وغرف ملابس">'),
     ('content="Your fantasies, our realities. Custom kitchens and dressing rooms in New Cairo."',
      'content="خيالكم، واقعنا. مطابخ وغرف ملابس حسب الطلب في القاهرة الجديدة."'),

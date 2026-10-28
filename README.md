@@ -1,5 +1,7 @@
 # WORX | Kitchen & Dressing — website
 
+Live at https://worxegypt.com (GitHub Pages, branch `claude/chat-session-vm7rph`; the `CNAME` file sets the domain).
+
 Static one-page site (HTML/CSS/JS, no build step). Open `index.html` in a browser, or host the folder on any static host (GitHub Pages, Netlify, Vercel).
 
 - `index.html` — content
