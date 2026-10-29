@@ -196,7 +196,7 @@ PAIRS = [
      'نحرص على التواصل المستمر مع عملائنا حتى انتهاء العمل. للحصول على عرض سعر مجاني، أو إذا كانت لديك أسئلة أو طلبات خاصة، راسلنا. يسعدنا خدمتك!'),
     ('<dt>Showroom</dt><dd>G 32 AB Park Mall, 90th St, New Cairo</dd>', '<dt>المعرض</dt><dd><bdi dir="ltr">G 32 AB</bdi> بارك مول، شارع التسعين، القاهرة الجديدة</dd>'),
     ('<dt>Phone</dt>', '<dt>الهاتف</dt>'),
-    ('<dt>Hours</dt><dd>All week: 12am – 11:45pm</dd>', '<dt>مواعيد العمل</dt><dd>طوال أيام الأسبوع: 12 ص – 11:45 م</dd>'),
+    ('<dt>Hours</dt><dd>All week: 12pm – 11:45pm</dd>', '<dt>مواعيد العمل</dt><dd>طوال أيام الأسبوع: 12 ظهراً – 11:45 مساءً</dd>'),
     ('aria-label="WORX on Facebook"', 'aria-label="WORX على فيسبوك"', 2),
     ('aria-label="WORX on Instagram"', 'aria-label="WORX على إنستجرام"', 2),
     ('<h3>Send a message</h3>', '<h3>أرسل رسالة</h3>'),
