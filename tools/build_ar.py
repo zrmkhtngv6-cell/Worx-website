@@ -14,8 +14,8 @@ PAIRS = [
     # Document
     ('<html lang="en">', '<html lang="ar" dir="rtl">'),
     ('<title>WORX | Kitchen &amp; Dressing — New Cairo</title>', '<title>WORX | مطابخ وغرف ملابس — القاهرة الجديدة</title>'),
-    ('content="WORX Kitchen & Dressing — custom kitchens, dressing rooms, remodels and repairs in New Cairo. Call for a free quote."',
-     'content="WORX للمطابخ وغرف الملابس — مطابخ وغرف ملابس حسب الطلب، تجديد وإصلاح في القاهرة الجديدة. اتصل بنا لعرض سعر مجاني."'),
+    ('content="WORX Kitchen & Dressing — custom kitchens and dressing rooms in New Cairo. Call for a free quote."',
+     'content="WORX للمطابخ وغرف الملابس — مطابخ وغرف ملابس حسب الطلب في القاهرة الجديدة. اتصل بنا لعرض سعر مجاني."'),
     ('<meta property="og:url" content="https://worxegypt.com/">', '<meta property="og:url" content="https://worxegypt.com/ar.html">\n  <meta property="og:locale" content="ar_EG">'),
     ('<link rel="canonical" href="https://worxegypt.com/">', '<link rel="canonical" href="https://worxegypt.com/ar.html">'),
     ('<meta property="og:title" content="WORX | Kitchen & Dressing">', '<meta property="og:title" content="WORX | مطابخ وغرف ملابس">'),
@@ -64,18 +64,15 @@ PAIRS = [
      'نعمل معك للالتزام بالمواعيد. التواصل المستمر أمر أساسي، لذلك لدينا فريق خدمة عملاء متاح على مدار الساعة طوال أيام الأسبوع، ومجموعة واتساب خاصة بك فور توقيع العقد لمساعدتك في جميع استفساراتك.'),
     ('alt="Finished WORX kitchen with a walnut dining bar and lit display cabinet"', 'alt="مطبخ منفّذ من WORX بطاولة طعام من خشب الجوز وخزانة عرض مضاءة"'),
     ('<h3>Great Service</h3>', '<h3>خدمة مميزة</h3>'),
-    ('We combine our industry knowledge, the highest quality equipment, and our dedication to deliver exceptional service to our clients. We will stay in touch, keeping you up to date on both the paperwork and renovation process.',
-     'نجمع بين خبرتنا في المجال وأعلى جودة في المعدات والتزامنا بتقديم خدمة استثنائية لعملائنا. سنبقى على تواصل دائم معك لنطلعك على كل خطوة، من الأوراق والتصاريح حتى انتهاء التجديد.'),
+    ('We combine our industry knowledge, the highest quality equipment, and our dedication to deliver exceptional service to our clients. We will stay in touch, keeping you up to date on every step of your project.',
+     'نجمع بين خبرتنا في المجال وأعلى جودة في المعدات والتزامنا بتقديم خدمة استثنائية لعملائنا. سنبقى على تواصل دائم معك لنطلعك على كل خطوة في مشروعك.'),
 
     # Services
     ('<p class="eyebrow eyebrow--light">Services</p>', '<p class="eyebrow eyebrow--light">خدماتنا</p>'),
     ('<h2>What we do</h2>', '<h2>ماذا نقدم</h2>'),
     ('<h3>Permits Simplified</h3>', '<h3>تصاريح بلا تعقيد</h3>'),
-    ('Renovations and installation require paperwork and permits. As certified contractors, we know what papers need to be filed and what permits need to be obtained.',
-     'أعمال التجديد والتركيب تحتاج إلى أوراق وتصاريح. وكمقاولين معتمدين، نعرف جيداً الأوراق المطلوب تقديمها والتصاريح اللازم استخراجها.'),
-    ('<h3>Remodels &amp; Renovations</h3>', '<h3>تجديد وإعادة تصميم</h3>'),
-    ("Still in love with your kitchen, but feel like it's a little outdated? Need a more functional kitchen for the chef of the house? Let's talk about a kitchen remodel.",
-     'ما زلت تحب مطبخك لكنك تشعر أنه أصبح قديماً بعض الشيء؟ تحتاج مطبخاً عملياً أكثر لطاهي البيت؟ دعنا نتحدث عن تجديد مطبخك.'),
+    ('Installation requires paperwork and permits. As certified contractors, we know what papers need to be filed and what permits need to be obtained.',
+     'أعمال التركيب تحتاج إلى أوراق وتصاريح. وكمقاولين معتمدين، نعرف جيداً الأوراق المطلوب تقديمها والتصاريح اللازم استخراجها.'),
     ('<h3>Repair Expertise</h3>', '<h3>خبرة في الإصلاح</h3>'),
     ('Every kitchen needs some repairs at some point. From wood rot to hinge damage, kitchen repairs need to be handled in such a way that they do not cover up related problems.',
      'كل مطبخ يحتاج إلى بعض الإصلاحات في وقت ما. من تلف الخشب إلى أعطال المفصلات، يجب التعامل مع الإصلاحات بطريقة لا تُخفي المشكلات المرتبطة بها.'),
@@ -158,9 +155,6 @@ PAIRS = [
     # Reviews (each review stays in the language it was written in)
     ('<p class="eyebrow">Reviews</p>', '<p class="eyebrow">آراء العملاء</p>'),
     ('<h2>What our clients say</h2>', '<h2>ماذا يقول عملاؤنا</h2>'),
-    ('''          <figure class="review">
-            <div class="stars" aria-label="5 out of 5 stars">''', '''          <figure class="review" dir="ltr" lang="en">
-            <div class="stars" aria-label="5 out of 5 stars">'''),
 
     # Team
     ('<p class="eyebrow">Our Team</p>', '<p class="eyebrow">فريقنا</p>'),
