@@ -142,7 +142,9 @@ PAIRS = [
     ('alt="Kitchen island with pendant lights and wood cabinetry"', 'alt="جزيرة مطبخ بإضاءة معلقة وخزائن خشبية"'),
     ('alt="Dark wood kitchen with lit glass display cabinet"', 'alt="مطبخ خشبي داكن بخزانة عرض زجاجية مضاءة"'),
     ('alt="Corner cabinet with pull-out carousel shelves"', 'alt="خزانة ركنية برفوف دوّارة منزلقة"'),
-    ('id="showMore">Show more projects</button>', 'id="showMore">عرض المزيد من المشاريع</button>'),
+    ('aria-label="Previous projects"', 'aria-label="المشاريع السابقة"'),
+    ('aria-label="Next projects"', 'aria-label="المشاريع التالية"'),
+    ('aria-label="Project photos, swipe to see more"', 'aria-label="صور المشاريع، اسحب لرؤية المزيد"'),
 
     # Videos
     ('<p class="eyebrow eyebrow--light">Watch</p>', '<p class="eyebrow eyebrow--light">شاهد</p>'),

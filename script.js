@@ -59,29 +59,40 @@ document.querySelectorAll('.card, .service, .gallery__item, .review, .team li, .
   revealObserver.observe(el);
 });
 
-// Gallery filters; "All" starts collapsed to the first few projects
-const GALLERY_PREVIEW = 12;
-const galleryItems = [...document.querySelectorAll('.gallery__item')];
-const showMore = document.getElementById('showMore');
-let activeFilter = 'all';
-let expanded = false;
-const renderGallery = () => {
-  const matches = galleryItems.filter(item => activeFilter === 'all' || item.dataset.cat === activeFilter);
-  const limit = activeFilter === 'all' && !expanded ? GALLERY_PREVIEW : Infinity;
-  galleryItems.forEach(item => { item.hidden = true; });
-  matches.forEach((item, i) => { item.hidden = i >= limit; });
-  showMore.parentElement.hidden = matches.length <= limit;
+// Gallery: swipeable carousel with filters, arrows and a progress bar
+const gallery = document.querySelector('.gallery');
+const galleryItems = [...gallery.querySelectorAll('.gallery__item')];
+const prevBtn = document.querySelector('.carousel__prev');
+const nextBtn = document.querySelector('.carousel__next');
+const bar = document.querySelector('.carousel__bar');
+// scrollLeft runs negative in right-to-left layouts
+const scrollPos = () => Math.abs(gallery.scrollLeft);
+const updateCarousel = () => {
+  const max = gallery.scrollWidth - gallery.clientWidth;
+  const ratio = gallery.clientWidth / gallery.scrollWidth;
+  bar.style.width = `${Math.min(100, ratio * 100)}%`;
+  bar.style.transform = `translateX(${(rtl ? -1 : 1) * (max > 0 ? scrollPos() / max : 0) * (1 / ratio - 1) * 100}%)`;
+  prevBtn.disabled = scrollPos() < 5;
+  nextBtn.disabled = scrollPos() > max - 5;
 };
+const step = dir => gallery.scrollBy({ left: dir * (rtl ? -1 : 1) * gallery.clientWidth * 0.8 });
+prevBtn.addEventListener('click', () => step(-1));
+nextBtn.addEventListener('click', () => step(1));
+gallery.addEventListener('scroll', updateCarousel, { passive: true });
+window.addEventListener('resize', updateCarousel);
 document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
   document.querySelectorAll('.filter').forEach(b => {
     b.classList.toggle('is-active', b === btn);
     b.setAttribute('aria-pressed', b === btn);
   });
-  activeFilter = btn.dataset.filter;
-  renderGallery();
+  galleryItems.forEach(item => {
+    item.hidden = btn.dataset.filter !== 'all' && item.dataset.cat !== btn.dataset.filter;
+  });
+  gallery.scrollTo({ left: 0, behavior: 'instant' });
+  updateCarousel();
 }));
-showMore.addEventListener('click', () => { expanded = true; renderGallery(); });
-renderGallery();
+galleryItems.forEach(item => item.querySelector('img').addEventListener('load', updateCarousel));
+updateCarousel();
 
 // Gallery lightbox with prev/next, keyboard and swipe
 const lightbox = document.getElementById('lightbox');
