@@ -62,10 +62,10 @@ PAIRS = [
     ('<h3>On-time Completion</h3>', '<h3>التسليم في الموعد</h3>'),
     ('We work with you to meet deadlines. Maintaining open communication is a must, that is why we have a customer support team available 24/7, and a WhatsApp group available once you sign the contract to help you with all your inquiries.',
      'نعمل معك للالتزام بالمواعيد. التواصل المستمر أمر أساسي، لذلك لدينا فريق خدمة عملاء متاح على مدار الساعة طوال أيام الأسبوع، ومجموعة واتساب خاصة بك فور توقيع العقد لمساعدتك في جميع استفساراتك.'),
-    ('alt="Finished WORX kitchen with stove and island"', 'alt="مطبخ منفّذ من WORX بموقد وجزيرة"'),
+    ('alt="Finished WORX kitchen with a walnut dining bar and lit display cabinet"', 'alt="مطبخ منفّذ من WORX بطاولة طعام من خشب الجوز وخزانة عرض مضاءة"'),
     ('<h3>Great Service</h3>', '<h3>خدمة مميزة</h3>'),
-    ('We combine our industry knowledge, the highest quality building supplies and equipment, and our dedication to deliver exceptional service to our clients. We will stay in touch, keeping you up to date on both the paperwork and renovation process.',
-     'نجمع بين خبرتنا في المجال وأعلى جودة في الخامات والمعدات والتزامنا بتقديم خدمة استثنائية لعملائنا. سنبقى على تواصل دائم معك لنطلعك على كل خطوة، من الأوراق والتصاريح حتى انتهاء التجديد.'),
+    ('We combine our industry knowledge, the highest quality equipment, and our dedication to deliver exceptional service to our clients. We will stay in touch, keeping you up to date on both the paperwork and renovation process.',
+     'نجمع بين خبرتنا في المجال وأعلى جودة في المعدات والتزامنا بتقديم خدمة استثنائية لعملائنا. سنبقى على تواصل دائم معك لنطلعك على كل خطوة، من الأوراق والتصاريح حتى انتهاء التجديد.'),
 
     # Services
     ('<p class="eyebrow eyebrow--light">Services</p>', '<p class="eyebrow eyebrow--light">خدماتنا</p>'),
