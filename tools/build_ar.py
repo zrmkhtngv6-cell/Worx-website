@@ -166,6 +166,9 @@ PAIRS = [
     ('<h2>What our clients say</h2>', '<h2>ماذا يقول عملاؤنا</h2>'),
 
     # Team
+    ('<h3 class="team-group__title">Engineers &amp; Leaders</h3>', '<h3 class="team-group__title">المهندسون والقيادات</h3>'),
+    ('<h3 class="team-group__title">Factory Team</h3>', '<h3 class="team-group__title">فريق المصنع</h3>'),
+    ('<h3 class="team-group__title">Social Media Team</h3>', '<h3 class="team-group__title">فريق السوشيال ميديا</h3>'),
     ('<p class="eyebrow">Our Team</p>', '<p class="eyebrow">فريقنا</p>'),
     ('<h2>The people behind WORX</h2>', '<h2>الفريق وراء WORX</h2>'),
     ('<strong>Marawan Mostafa</strong><span>Quality Control Expert</span>', '<strong>مروان مصطفى</strong><span>خبير مراقبة الجودة</span>'),
