@@ -167,7 +167,7 @@ PAIRS = [
     ('<strong>Esraa Alsahar</strong><span>Content Creator &amp; Social Media Specialist</span>', '<strong>إسراء الساحر</strong><span>صانعة محتوى وأخصائية سوشيال ميديا</span>'),
     ('<strong>Basma Ashraf</strong><span>HR</span>', '<strong>بسمة أشرف</strong><span>الموارد البشرية</span>'),
     ('<strong>Mahmoud Mostafa</strong><span>Professional Legal Accountant</span>', '<strong>محمود مصطفى</strong><span>محاسب قانوني</span>'),
-    ('<span class="initials">SM</span><strong>Salsabil Mohamed</strong><span>Social Media Interior Designer</span>', '<span class="initials">س</span><strong>سلسبيل محمد</strong><span>مصممة ديكور داخلي للسوشيال ميديا</span>'),
+    ('<strong>Salsabil Mohamed</strong><span>Social Media Interior Designer</span>', '<strong>سلسبيل محمد</strong><span>مصممة ديكور داخلي للسوشيال ميديا</span>'),
     ('<strong>Nada Alsahhar</strong><span>Customer Service</span>', '<strong>ندى السحار</strong><span>خدمة العملاء</span>'),
     ('<strong>Al Sayed Ibrahim</strong><span>Interior Designer</span>', '<strong>السيد إبراهيم</strong><span>مصمم ديكور داخلي</span>'),
     ('<span class="initials">AA</span><strong>Abd-Allah</strong><span>Price Estimation Accountant</span>', '<span class="initials">ع</span><strong>عبدالله</strong><span>محاسب تسعير</span>'),
