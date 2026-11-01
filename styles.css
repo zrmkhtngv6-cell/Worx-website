@@ -86,7 +86,7 @@ h3 { font-size: 1.3rem; }
 .hero__content { position: relative; padding-block: 5rem 4.5rem; }
 .hero h1 { font-size: clamp(2.6rem, 7vw, 5.2rem); margin-bottom: .35em; }
 .hero .eyebrow { color: var(--gold); }
-.hero h1 em { font-style: normal; color: var(--gold); background: var(--gold-shine); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; padding-inline-end: .08em; }
+.hero h1 em { font-family: "Bodoni Moda", "Didot", var(--serif); font-weight: 500; font-style: normal; color: var(--gold); background: var(--gold-shine); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; padding-inline-end: .08em; }
 .hero__lead { font-size: clamp(1rem, 2vw, 1.2rem); max-width: 34rem; opacity: .9; margin: 0 0 2rem; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 
@@ -237,6 +237,7 @@ html[lang="ar"] body { font-family: "Cairo", var(--sans); line-height: 1.8; }
 html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3,
 html[lang="ar"] .service__num, html[lang="ar"] .team .initials,
 html[lang="ar"] .video-card strong { font-family: "Cairo", var(--serif); font-weight: 700; }
+html[lang="ar"] .hero h1 em { font-family: "Cairo", var(--serif); font-weight: 700; }
 html[lang="ar"] .section__sub { font-family: "Cairo", var(--sans); font-weight: 400; }
 /* Spaced-out letters break joined Arabic script */
 html[lang="ar"] body * { letter-spacing: normal !important; }
