@@ -169,7 +169,9 @@ h3 { font-size: 1.3rem; }
 @media (max-width: 560px) { .videos { grid-template-columns: 1fr 1fr; gap: 12px; } .video-card:last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - 6px); } .video-card strong { font-size: 1rem; } .video-card span { font-size: .8rem; } }
 
 /* Reviews */
-.section__rating { display: inline-flex; align-items: center; gap: .6rem; margin: 0 0 .8rem; font-weight: 600; }
+.section__rating { display: inline-flex; align-items: center; gap: .6rem; margin: 0 0 .8rem; font-weight: 600; text-decoration: none; }
+.section__rating:hover span:last-child { text-decoration: underline; }
+.reviews__more { text-align: center; margin-top: 1.2rem; }
 .section__rating .stars { margin: 0; }
 .section__score { font: 600 2rem/1 var(--serif); }
 .reviews { columns: 3 300px; column-gap: 1.4rem; }

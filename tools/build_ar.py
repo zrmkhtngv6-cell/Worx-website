@@ -158,7 +158,8 @@ PAIRS = [
     # Reviews (each review stays in the language it was written in)
     ('<small class="review__src">Google review</small>', '<small class="review__src" lang="ar" dir="rtl">تقييم على جوجل</small>', 9),
     ('Real reviews from our customers on Google.', 'تقييمات حقيقية من عملائنا على جوجل.'),
-    ('<span>on Google</span></p>', '<span>على جوجل</span></p>'),
+    ('<span>on Google</span></a>', '<span>على جوجل</span></a>'),
+    ('rel="noopener">Read all our reviews on Google</a>', 'rel="noopener">اقرأ جميع تقييماتنا على جوجل</a>'),
     ('<p class="eyebrow">Reviews</p>', '<p class="eyebrow">آراء العملاء</p>'),
     ('<h2>What our clients say</h2>', '<h2>ماذا يقول عملاؤنا</h2>'),
 
