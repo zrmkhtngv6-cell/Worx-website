@@ -289,8 +289,8 @@ html[lang="ar"] .btn, html[lang="ar"] .nav a:not(.btn), html[lang="ar"] .filter 
 .section__head .eyebrow::before, .section__head .eyebrow::after,
 .feature__text .eyebrow::before, .contact__info .eyebrow::before { content: ""; flex: none; width: 14px; height: 12px; background: var(--gold); clip-path: polygon(50% 0, 100% 100%, 0 100%); }
 .section__head .eyebrow::after { transform: rotate(180deg); }
-/* Row of gold diagonal strokes under each section heading */
-.section__head::after { content: ""; display: block; width: 140px; height: 14px; margin: 1.4rem auto 0; background: linear-gradient(135deg, transparent 45%, var(--gold) 45% 55%, transparent 55%) 0 0 / 14px 14px repeat-x; }
+/* Thin gold line under each section heading */
+.section__head::after { content: ""; display: block; width: 64px; height: 2px; margin: 1.4rem auto 0; background: var(--gold); border-radius: 2px; }
 /* Faint triangle grid behind dark sections, like the showroom's triangle wall */
 .section--dark { position: relative; isolation: isolate; }
 .section--dark::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .08; pointer-events: none; background:
