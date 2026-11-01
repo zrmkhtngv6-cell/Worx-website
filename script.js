@@ -1,5 +1,5 @@
 // WhatsApp number used by the quote form (international format, digits only)
-const WHATSAPP_NUMBER = '201117776589';
+const WHATSAPP_NUMBER = '201117776327';
 
 // Text set from script, per page language (index.html = en, ar.html = ar)
 const STRINGS = {
