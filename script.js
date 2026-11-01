@@ -129,20 +129,28 @@ lightbox.addEventListener('touchend', e => {
   touchX = null;
 });
 
-// Sound toggle for the kitchen tour (browsers only autoplay muted video)
-const tour = document.getElementById('tourVideo');
-const soundToggle = document.getElementById('soundToggle');
-soundToggle.addEventListener('click', () => {
-  tour.muted = !tour.muted;
-  if (!tour.muted) tour.play();
-  soundToggle.textContent = tour.muted ? t.soundOn : t.soundOff;
-  soundToggle.setAttribute('aria-pressed', !tour.muted);
-});
+// All videos loop silently; play only while on screen to save data
+const loopVideos = [...document.querySelectorAll('video[autoplay]')];
+const videoObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.play().catch(() => {});
+    else entry.target.pause();
+  });
+}, { threshold: 0.25 });
+loopVideos.forEach(v => videoObserver.observe(v));
 
-// Only one tour video with sound plays at a time
-const tourVideos = [...document.querySelectorAll('.video-card video[controls]')];
-tourVideos.forEach(v => v.addEventListener('play', () => {
-  tourVideos.forEach(other => { if (other !== v) other.pause(); });
+// Sound buttons (browsers only autoplay muted video); one video has sound at a time
+const soundButtons = [...document.querySelectorAll('.sound-toggle')];
+const setSound = (btn, on) => {
+  btn.previousElementSibling.muted = !on;
+  btn.textContent = on ? t.soundOff : t.soundOn;
+  btn.setAttribute('aria-pressed', on);
+};
+soundButtons.forEach(btn => btn.addEventListener('click', () => {
+  const on = btn.previousElementSibling.muted;
+  soundButtons.forEach(other => { if (other !== btn) setSound(other, false); });
+  setSound(btn, on);
+  if (on) btn.previousElementSibling.play();
 }));
 
 // Quote form → WhatsApp

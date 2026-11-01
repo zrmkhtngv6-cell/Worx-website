@@ -174,7 +174,8 @@ h3 { font-size: 1.3rem; }
 /* Videos */
 .section__lead { color: rgba(255,255,255,.7); margin: 0; }
 .videos { display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); max-width: 1080px; margin-inline: auto; }
-.video-card { margin: 0; }
+.video-card { margin: 0; position: relative; }
+.video-card__sound { top: 12px; bottom: auto; }
 .video-card video { width: 100%; display: block; aspect-ratio: 9 / 16; object-fit: cover; border-radius: var(--radius); background: #222; }
 .video-card figcaption { padding-top: 1rem; }
 .video-card strong { display: block; font: 500 1.2rem var(--serif); }
