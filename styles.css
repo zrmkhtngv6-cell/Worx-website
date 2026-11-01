@@ -108,7 +108,9 @@ h3 { font-size: 1.3rem; }
 /* Services */
 .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); border-top: 1px solid rgba(255,255,255,.15); }
 .service { padding: 2.5rem 0 2rem; padding-inline-end: 2rem; border-bottom: 1px solid rgba(255,255,255,.15); }
-.service__num { font-family: var(--serif); font-size: 2.6rem; color: #d9b48c; display: block; margin-bottom: 1rem; }
+.service__num { position: relative; width: 74px; height: 64px; display: grid; place-items: end center; padding-bottom: 6px; margin-bottom: 1.2rem; font: 500 1.4rem var(--serif); color: var(--gold); }
+/* Gold outline triangle around the service number */
+.service__num::before { content: ""; position: absolute; inset: 0; background: var(--gold); clip-path: polygon(50% 0, 100% 100%, 0 100%, 0 100%, 4% 96%, 96% 96%, 50% 7%, 4% 96%, 0 100%); }
 .service h3 { font-size: 1.6rem; }
 .service p { color: rgba(255,255,255,.72); margin: 0; }
 @media (min-width: 860px) {
@@ -126,7 +128,12 @@ h3 { font-size: 1.3rem; }
 .gallery__item[hidden] { display: none; }
 .gallery__more { text-align: center; margin-top: 1.5rem; }
 .gallery__more[hidden] { display: none; }
+.gallery__item { position: relative; }
 .gallery__item img { width: 100%; height: auto; transition: transform .6s; }
+/* Gold corner triangle, grows on hover */
+.gallery__item::after { content: ""; position: absolute; inset-inline-end: 0; bottom: 0; width: 38px; height: 38px; background: var(--gold); clip-path: polygon(100% 0, 100% 100%, 0 100%); transition: width .3s, height .3s; pointer-events: none; }
+[dir="rtl"] .gallery__item::after { clip-path: polygon(0 0, 100% 100%, 0 100%); }
+.gallery__item:hover::after { width: 56px; height: 56px; }
 .gallery__item:hover img { transform: scale(1.04); }
 @media (max-width: 700px) { .gallery { columns: 2; column-gap: 10px; } .gallery__item { margin-bottom: 10px; } }
 
@@ -244,3 +251,19 @@ html[lang="ar"] body * { letter-spacing: normal !important; }
 html[lang="ar"] .eyebrow, html[lang="ar"] .details dt, html[lang="ar"] .form label { font-size: .85rem; }
 html[lang="ar"] .btn, html[lang="ar"] .nav a:not(.btn), html[lang="ar"] .filter { font-family: "Cairo", var(--sans); font-size: .9rem; }
 [dir="rtl"] .hero__overlay { background: linear-gradient(270deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 70%), linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.4) 45%, rgba(0,0,0,.82) 100%); }
+
+/* Triangle motif (from the triangles in the WORX logo) */
+/* Gold triangles beside section labels: ▲ LABEL ▼ */
+.section__head .eyebrow, .feature__text .eyebrow, .contact__info .eyebrow { display: flex; align-items: center; gap: .75rem; }
+.section__head .eyebrow { justify-content: center; }
+.section__head .eyebrow::before, .section__head .eyebrow::after,
+.feature__text .eyebrow::before, .contact__info .eyebrow::before { content: ""; flex: none; width: 14px; height: 12px; background: var(--gold); clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+.section__head .eyebrow::after { transform: rotate(180deg); }
+/* Row of gold diagonal strokes under each section heading */
+.section__head::after { content: ""; display: block; width: 140px; height: 14px; margin: 1.4rem auto 0; background: linear-gradient(135deg, transparent 45%, var(--gold) 45% 55%, transparent 55%) 0 0 / 14px 14px repeat-x; }
+/* Faint triangle grid behind dark sections, like the showroom's triangle wall */
+.section--dark { position: relative; isolation: isolate; }
+.section--dark::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .08; pointer-events: none; background:
+  linear-gradient(60deg, transparent 49.5%, var(--gold) 49.5% 50.5%, transparent 50.5%) 0 0 / 60px 104px,
+  linear-gradient(-60deg, transparent 49.5%, var(--gold) 49.5% 50.5%, transparent 50.5%) 0 0 / 60px 104px,
+  linear-gradient(0deg, transparent 49.5%, var(--gold) 49.5% 50.5%, transparent 50.5%) 0 0 / 60px 52px; }
