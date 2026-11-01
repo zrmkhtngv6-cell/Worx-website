@@ -155,6 +155,7 @@ PAIRS = [
     # Team
     ('<h3 class="team-group__title">Engineers &amp; Leaders</h3>', '<h3 class="team-group__title">المهندسون والقيادات</h3>'),
     ('<h3 class="team-group__title">Factory Team</h3>', '<h3 class="team-group__title">فريق المصنع</h3>'),
+    ('<h3 class="team-group__title">Finance Team</h3>', '<h3 class="team-group__title">فريق الحسابات</h3>'),
     ('<h3 class="team-group__title">Social Media Team</h3>', '<h3 class="team-group__title">فريق السوشيال ميديا</h3>'),
     ('<p class="eyebrow">Our Team</p>', '<p class="eyebrow">فريقنا</p>'),
     ('<h2>The people behind WORX</h2>', '<h2>الفريق وراء WORX</h2>'),
