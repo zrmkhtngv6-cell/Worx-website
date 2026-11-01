@@ -170,6 +170,7 @@ PAIRS = [
     ('<h2>The people behind WORX</h2>', '<h2>الفريق وراء WORX</h2>'),
     ('<strong>Marawan Mostafa</strong><span>Quality Control Expert</span>', '<strong>مروان مصطفى</strong><span>خبير مراقبة الجودة</span>'),
     ('<strong>Tarek Hossam</strong><span>Lead Showroom Designer</span>', '<strong>طارق حسام</strong><span>كبير مصممي المعرض</span>'),
+    ('<span class="initials">MM</span><strong>Muhammed Mahmoud</strong><span>Factory Manager</span>', '<span class="initials">م</span><strong>محمد محمود</strong><span>مدير المصنع</span>'),
     ('<span class="initials">YS</span><strong>Youssef Shaaban</strong><span>Lead Manufacturing Engineer</span>', '<span class="initials">ي</span><strong>يوسف شعبان</strong><span>كبير مهندسي التصنيع</span>'),
     ('<span class="initials">AM</span><strong>Amr Mohy</strong><span>Installation &amp; Inspection Engineer</span>', '<span class="initials">ع</span><strong>عمرو محيي</strong><span>مهندس التركيب والمعاينة</span>'),
     ('<strong>Mahmoud Radwan</strong><span>Showroom Designer</span>', '<strong>محمود رضوان</strong><span>مصمم المعرض</span>'),
