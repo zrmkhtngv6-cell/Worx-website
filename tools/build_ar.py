@@ -83,7 +83,6 @@ PAIRS = [
     # In the details
     ('aria-label="Tour of a WORX kitchen: pull-out pantry, fold-out table, under-sink organizer, appliance cabinet and vegetable drawers"',
      'aria-label="جولة في مطبخ من WORX: مخزن منزلق، طاولة قابلة للطي، منظم أسفل الحوض، خزانة للأجهزة وأدراج للخضروات"'),
-    ('aria-pressed="false">Sound on</button>', 'aria-pressed="false">تشغيل الصوت</button>', 3),
     ('aria-label="Drawer with a custom wooden cutlery organizer sliding open"', 'aria-label="درج بمنظم خشبي مخصص لأدوات المائدة يُفتح"'),
     ('<p class="eyebrow">In the details</p>', '<p class="eyebrow">في التفاصيل</p>'),
     ('<h2>Made to be used every day</h2>', '<h2>مصمَّم للاستخدام كل يوم</h2>'),
@@ -137,7 +136,7 @@ PAIRS = [
     # Videos
     ('<p class="eyebrow eyebrow--light">Watch</p>', '<p class="eyebrow eyebrow--light">شاهد</p>'),
     ('<h2>Take the tour</h2>', '<h2>جولة داخل أعمالنا</h2>'),
-    ('Step inside finished WORX projects. Tap “Sound on” to listen.', 'ادخل إلى مشاريع WORX المنفّذة. اضغط على «تشغيل الصوت» للاستماع.'),
+    ('Step inside finished WORX projects.', 'ادخل إلى مشاريع WORX المنفّذة.'),
     ('aria-label="Tour of four WORX dressing rooms and a vanity"', 'aria-label="جولة في أربع غرف ملابس وتسريحة من WORX"'),
     ('<strong>The WORX Collection: Dressing</strong><span>Four dressing rooms and a vanity</span>',
      '<strong>مجموعة WORX: غرف الملابس</strong><span>أربع غرف ملابس وتسريحة</span>'),

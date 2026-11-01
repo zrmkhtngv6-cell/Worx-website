@@ -4,11 +4,11 @@ const WHATSAPP_NUMBER = '201117776327';
 // Text set from script, per page language (index.html = en, ar.html = ar)
 const STRINGS = {
   en: {
-    openMenu: 'Open menu', closeMenu: 'Close menu', soundOn: 'Sound on', soundOff: 'Sound off',
+    openMenu: 'Open menu', closeMenu: 'Close menu',
     waIntro: 'Hello WORX, I would like a free quote.', waName: 'Name', waPhone: 'Phone', waAddress: 'Address', waMessage: 'Message',
   },
   ar: {
-    openMenu: 'فتح القائمة', closeMenu: 'إغلاق القائمة', soundOn: 'تشغيل الصوت', soundOff: 'كتم الصوت',
+    openMenu: 'فتح القائمة', closeMenu: 'إغلاق القائمة',
     waIntro: 'مرحباً WORX، أود الحصول على عرض سعر مجاني.', waName: 'الاسم', waPhone: 'الهاتف', waAddress: 'العنوان', waMessage: 'الرسالة',
   },
 };
@@ -138,20 +138,6 @@ const videoObserver = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.25 });
 loopVideos.forEach(v => videoObserver.observe(v));
-
-// Sound buttons (browsers only autoplay muted video); one video has sound at a time
-const soundButtons = [...document.querySelectorAll('.sound-toggle')];
-const setSound = (btn, on) => {
-  btn.previousElementSibling.muted = !on;
-  btn.textContent = on ? t.soundOff : t.soundOn;
-  btn.setAttribute('aria-pressed', on);
-};
-soundButtons.forEach(btn => btn.addEventListener('click', () => {
-  const on = btn.previousElementSibling.muted;
-  soundButtons.forEach(other => { if (other !== btn) setSound(other, false); });
-  setSound(btn, on);
-  if (on) btn.previousElementSibling.play();
-}));
 
 // Quote form → WhatsApp
 document.getElementById('quoteForm').addEventListener('submit', e => {
