@@ -159,7 +159,7 @@ PAIRS = [
     ('<h3 class="team-group__title">Social Media Team</h3>', '<h3 class="team-group__title">فريق السوشيال ميديا</h3>'),
     ('<p class="eyebrow">Our Team</p>', '<p class="eyebrow">فريقنا</p>'),
     ('<h2>The people behind WORX</h2>', '<h2>الفريق وراء WORX</h2>'),
-    ('<strong>Marawan Mostafa</strong><span>Quality Control Expert</span>', '<strong>مروان مصطفى</strong><span>خبير مراقبة الجودة</span>'),
+    ('<strong>Marawan Mostafa</strong><span>Quality Control Engineer</span>', '<strong>مروان مصطفى</strong><span>مهندس مراقبة الجودة</span>'),
     ('<strong>Tarek Hossam</strong><span>Lead Showroom Designer</span>', '<strong>طارق حسام</strong><span>كبير مصممي المعرض</span>'),
     ('<strong>Muhammed Mahmoud</strong><span>Factory Manager</span>', '<strong>محمد محمود</strong><span>مدير المصنع</span>'),
     ('<strong>Youssef Shaaban</strong><span>Lead Manufacturing Engineer</span>', '<strong>يوسف شعبان</strong><span>كبير مهندسي التصنيع</span>'),
