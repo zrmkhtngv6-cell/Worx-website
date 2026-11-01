@@ -73,9 +73,9 @@ PAIRS = [
     ('<h3>Permits Simplified</h3>', '<h3>تصاريح بلا تعقيد</h3>'),
     ('Installation requires paperwork and permits. As certified contractors, we know what papers need to be filed and what permits need to be obtained.',
      'أعمال التركيب تحتاج إلى أوراق وتصاريح. وكمقاولين معتمدين، نعرف جيداً الأوراق المطلوب تقديمها والتصاريح اللازم استخراجها.'),
-    ('<h3>Repair Expertise</h3>', '<h3>خبرة في الإصلاح</h3>'),
-    ('Every kitchen needs some repairs at some point. From wood rot to hinge damage, kitchen repairs need to be handled in such a way that they do not cover up related problems.',
-     'كل مطبخ يحتاج إلى بعض الإصلاحات في وقت ما. من تلف الخشب إلى أعطال المفصلات، يجب التعامل مع الإصلاحات بطريقة لا تُخفي المشكلات المرتبطة بها.'),
+    ('<h3>10-Year Warranty</h3>', '<h3>ضمان 10 سنوات</h3>'),
+    ('Every WORX kitchen and dressing room is covered by a 10-year warranty. If anything needs attention — from a hinge to a drawer — our team comes back and fixes it properly.',
+     'كل مطابخ وغرف ملابس WORX مشمولة بضمان لمدة 10 سنوات. وإذا احتاج أي شيء إلى صيانة — من مفصلة إلى درج — يعود فريقنا لإصلاحه كما يجب.'),
 
     # In the details
     ('aria-label="Tour of a WORX kitchen: pull-out pantry, fold-out table, under-sink organizer, appliance cabinet and vegetable drawers"',
