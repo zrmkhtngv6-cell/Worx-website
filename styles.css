@@ -85,13 +85,13 @@ h3 { font-size: 1.3rem; }
 .hero__overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 70%), linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.4) 45%, rgba(0,0,0,.82) 100%); }
 .hero__content { position: relative; padding-block: 5rem 5.5rem; }
 /* Gold triangle pattern on the open side of the hero, fading toward the middle */
-.hero__pattern { position: absolute; inset-block: 0; inset-inline-end: 0; width: 55%; pointer-events: none; opacity: .5; background:
+.hero__pattern { position: absolute; inset-block: 0; inset-inline-end: 0; width: 55%; pointer-events: none; opacity: .25; background:
   linear-gradient(60deg, transparent 49%, var(--gold) 49% 51%, transparent 51%) 0 0 / 60px 104px,
   linear-gradient(-60deg, transparent 49%, var(--gold) 49% 51%, transparent 51%) 0 0 / 60px 104px,
   linear-gradient(0deg, transparent 49%, var(--gold) 49% 51%, transparent 51%) 0 0 / 60px 52px;
   -webkit-mask-image: linear-gradient(to left, #000 0%, rgba(0,0,0,.6) 30%, transparent 85%); mask-image: linear-gradient(to left, #000 0%, rgba(0,0,0,.6) 30%, transparent 85%); }
 [dir="rtl"] .hero__pattern { -webkit-mask-image: linear-gradient(to right, #000 0%, rgba(0,0,0,.6) 30%, transparent 85%); mask-image: linear-gradient(to right, #000 0%, rgba(0,0,0,.6) 30%, transparent 85%); }
-@media (max-width: 700px) { .hero__pattern { width: 70%; opacity: .35; } }
+@media (max-width: 700px) { .hero__pattern { width: 70%; opacity: .18; } }
 /* Bottom edge of the hero rises to a shallow point */
 .hero::after { content: ""; position: absolute; inset-inline: 0; bottom: -1px; height: clamp(22px, 4vw, 50px); background: var(--paper); clip-path: polygon(0 100%, 0 55%, 50% 0, 100% 55%, 100% 100%); pointer-events: none; }
 .hero h1 { font-size: clamp(2.6rem, 7vw, 5.2rem); margin-bottom: .35em; }
