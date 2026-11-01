@@ -42,7 +42,7 @@ PAIRS = [
 
     # Hero
     ('alt="Modern WORX kitchen with wood finishes, white island and glass cabinets"', 'alt="مطبخ حديث من WORX بتشطيبات خشبية وجزيرة بيضاء وخزائن زجاجية"'),
-    ('<p class="eyebrow eyebrow--light">Kitchen &amp; Dressing · New Cairo</p>', '<p class="eyebrow eyebrow--light">مطابخ وغرف ملابس · القاهرة الجديدة</p>'),
+    ('<p class="eyebrow eyebrow--light">Kitchens, Dressings &amp; More</p>', '<p class="eyebrow eyebrow--light">مطابخ، غرف ملابس والمزيد</p>'),
     ('<h1>Your fantasies,<br><em>our realities.</em></h1>', '<h1>خيالكم،<br><em>واقعنا.</em></h1>'),
     ('Custom kitchens and dressing rooms — designed, built and installed by one dedicated team.',
      'مطابخ وغرف ملابس حسب الطلب — تصميم وتصنيع وتركيب بفريق واحد متخصص.'),
