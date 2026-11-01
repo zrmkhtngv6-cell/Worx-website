@@ -85,7 +85,7 @@ h3 { font-size: 1.3rem; }
 .hero__overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 70%), linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.4) 45%, rgba(0,0,0,.82) 100%); }
 .hero__content { position: relative; padding-block: 5rem 5.5rem; }
 /* Gold triangle pattern on the open side of the hero, fading toward the middle */
-.hero__pattern { position: absolute; inset-block: 0; inset-inline-end: 0; width: 55%; pointer-events: none; opacity: .5; background: url("assets/img/triangle-grid.svg?v=2") 0 0 / 60px 104px;
+.hero__pattern { position: absolute; inset-block: 0; inset-inline-end: 0; width: 55%; pointer-events: none; opacity: .5; background: url("assets/img/triangle-grid.svg?v=3") 0 0 / 60px 104px;
   -webkit-mask-image: linear-gradient(to left, #000 0%, rgba(0,0,0,.6) 30%, transparent 85%); mask-image: linear-gradient(to left, #000 0%, rgba(0,0,0,.6) 30%, transparent 85%); }
 [dir="rtl"] .hero__pattern { -webkit-mask-image: linear-gradient(to right, #000 0%, rgba(0,0,0,.6) 30%, transparent 85%); mask-image: linear-gradient(to right, #000 0%, rgba(0,0,0,.6) 30%, transparent 85%); }
 @media (max-width: 700px) { .hero__pattern { width: 70%; opacity: .35; } }
@@ -292,4 +292,4 @@ html[lang="ar"] .btn, html[lang="ar"] .nav a:not(.btn), html[lang="ar"] .filter 
 .section__head::after { content: ""; display: block; width: 64px; height: 2px; margin: 1.4rem auto 0; background: var(--gold); border-radius: 2px; }
 /* Faint triangle grid behind dark sections, like the showroom's triangle wall */
 .section--dark { position: relative; isolation: isolate; }
-.section--dark::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .08; pointer-events: none; background: url("assets/img/triangle-grid.svg?v=2") 0 0 / 60px 104px; }
+.section--dark::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .08; pointer-events: none; background: url("assets/img/triangle-grid.svg?v=3") 0 0 / 60px 104px; }
