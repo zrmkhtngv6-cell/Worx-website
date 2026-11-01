@@ -169,8 +169,8 @@ h3 { font-size: 1.3rem; }
 @media (max-width: 560px) { .videos { grid-template-columns: 1fr 1fr; gap: 12px; } .video-card:last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - 6px); } .video-card strong { font-size: 1rem; } .video-card span { font-size: .8rem; } }
 
 /* Reviews */
-.reviews { display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 900px; margin-inline: auto; }
-.review { margin: 0; background: #fff; border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+.reviews { columns: 3 300px; column-gap: 1.4rem; }
+.review { margin: 0 0 1.4rem; background: #fff; border-radius: var(--radius); padding: 1.8rem; box-shadow: var(--shadow); display: flex; flex-direction: column; break-inside: avoid; }
 .stars { color: #e0a53a; letter-spacing: .15em; margin-bottom: .8rem; }
 .review blockquote { margin: 0 0 1.5rem; color: var(--ink-soft); font-size: 1.05rem; flex: 1; }
 .review figcaption { display: flex; align-items: center; gap: .8rem; }

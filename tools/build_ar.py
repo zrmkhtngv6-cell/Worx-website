@@ -156,6 +156,8 @@ PAIRS = [
      '<strong>جولة في مطبخ بواجهات مضلّعة</strong><span>جزيرة جرانيت، خزائن مضلّعة، أفران مدمجة</span>'),
 
     # Reviews (each review stays in the language it was written in)
+    ('<small class="review__src">Google review</small>', '<small class="review__src" lang="ar" dir="rtl">تقييم على جوجل</small>', 9),
+    ('Real reviews from our customers on Google.', 'تقييمات حقيقية من عملائنا على جوجل.'),
     ('<p class="eyebrow">Reviews</p>', '<p class="eyebrow">آراء العملاء</p>'),
     ('<h2>What our clients say</h2>', '<h2>ماذا يقول عملاؤنا</h2>'),
 
