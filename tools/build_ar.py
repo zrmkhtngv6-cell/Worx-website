@@ -70,9 +70,9 @@ PAIRS = [
     # Services
     ('<p class="eyebrow eyebrow--light">Services</p>', '<p class="eyebrow eyebrow--light">خدماتنا</p>'),
     ('<h2>What we do</h2>', '<h2>ماذا نقدم</h2>'),
-    ('<h3>Permits Simplified</h3>', '<h3>تصاريح بلا تعقيد</h3>'),
-    ('Installation requires paperwork and permits. As certified contractors, we know what papers need to be filed and what permits need to be obtained.',
-     'أعمال التركيب تحتاج إلى أوراق وتصاريح. وكمقاولين معتمدين، نعرف جيداً الأوراق المطلوب تقديمها والتصاريح اللازم استخراجها.'),
+    ('<h3>Made in Our Factory</h3>', '<h3>صُنع في مصنعنا</h3>'),
+    ('Every piece is manufactured in our own factory using quality materials and precise machinery, giving you a perfect finish and fair prices.',
+     'كل قطعة تُصنع في مصنعنا الخاص بخامات عالية الجودة وماكينات دقيقة، لتحصل على تشطيب مثالي وأسعار عادلة.'),
     ('<h3>10-Year Warranty</h3>', '<h3>ضمان 10 سنوات</h3>'),
     ('Every WORX kitchen and dressing room is covered by a 10-year warranty. If anything needs attention — from a hinge to a drawer — our team comes back and fixes it properly.',
      'كل مطابخ وغرف ملابس WORX مشمولة بضمان لمدة 10 سنوات. وإذا احتاج أي شيء إلى صيانة — من مفصلة إلى درج — يعود فريقنا لإصلاحه كما يجب.'),
