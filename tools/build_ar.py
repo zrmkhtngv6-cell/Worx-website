@@ -44,8 +44,8 @@ PAIRS = [
     ('alt="Modern WORX kitchen with wood finishes, white island and glass cabinets"', 'alt="مطبخ حديث من WORX بتشطيبات خشبية وجزيرة بيضاء وخزائن زجاجية"'),
     ('<p class="eyebrow eyebrow--light">Kitchens, Dressings &amp; More</p>', '<p class="eyebrow eyebrow--light">مطابخ، غرف ملابس والمزيد</p>'),
     ('<h1>Your fantasies,<br><em>our realities.</em></h1>', '<h1>خيالكم،<br><em>واقعنا.</em></h1>'),
-    ('Custom kitchens and dressing rooms — designed, built and installed by one dedicated team.',
-     'مطابخ وغرف ملابس حسب الطلب — تصميم وتصنيع وتركيب بفريق واحد متخصص.'),
+    ('Custom kitchens and dressing rooms — designed, built and installed by our dedicated team.',
+     'مطابخ وغرف ملابس حسب الطلب — تصميم وتصنيع وتركيب بأيدي فريقنا المتخصص.'),
     ('class="btn btn--light">Get a free quote</a>', 'class="btn btn--light">اطلب عرض سعر مجاني</a>'),
     ('class="btn btn--ghost">See our work</a>', 'class="btn btn--ghost">شاهد أعمالنا</a>'),
 
