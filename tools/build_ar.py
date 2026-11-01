@@ -50,8 +50,8 @@ PAIRS = [
     ('class="btn btn--ghost">See our work</a>', 'class="btn btn--ghost">شاهد أعمالنا</a>'),
 
     # Why WORX
-    ('<p class="eyebrow">Why WORX</p>', '<p class="eyebrow">لماذا WORX</p>'),
-    ('<h2>Built right, delivered on time</h2>', '<h2>تنفيذ متقن وتسليم في الموعد</h2>'),
+    ('<h2>Why WORX?</h2>', '<h2>لماذا WORX؟</h2>'),
+    ('From design to delivery, your satisfaction is our top priority.', 'من التصميم حتى التسليم، رضاك هو أولويتنا الأولى.'),
     ('alt="Contractor cutting wood with a mitre saw"', 'alt="نجار يقطع الخشب بمنشار"'),
     ('<h3>Licensed Contractors</h3>', '<h3>مقاولون مرخّصون</h3>'),
     ('As a company dedicated to providing great service, it is important to us to deliver unparalleled workmanship on every assignment. We are accredited, licensed, bonded, and insured. With experience and expertise, we provide the support your project needs.',

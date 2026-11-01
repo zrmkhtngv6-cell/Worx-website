@@ -92,6 +92,7 @@ h3 { font-size: 1.3rem; }
 .section--cream { background: var(--cream); }
 .section--dark { background: var(--ink); color: #fff; }
 .section__head { text-align: center; max-width: 40rem; margin: 0 auto 3rem; }
+.section__sub { font-family: var(--serif); font-size: clamp(1.15rem, 2.6vw, 1.45rem); line-height: 1.45; color: var(--ink-soft); margin: 0; }
 
 /* Cards */
 .cards { display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
@@ -234,6 +235,7 @@ html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3,
 html[lang="ar"] .service__num, html[lang="ar"] .team .initials,
 html[lang="ar"] .video-card strong { font-family: "Cairo", var(--serif); font-weight: 700; }
 html[lang="ar"] h1 em { font-style: normal; }
+html[lang="ar"] .section__sub { font-family: "Cairo", var(--sans); font-weight: 400; }
 /* Spaced-out letters break joined Arabic script */
 html[lang="ar"] body * { letter-spacing: normal !important; }
 html[lang="ar"] .eyebrow, html[lang="ar"] .details dt, html[lang="ar"] .form label { font-size: .85rem; }
