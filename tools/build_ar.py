@@ -52,7 +52,9 @@ PAIRS = [
     # Why WORX
     ('<h2>Why WORX?</h2>', '<h2>لماذا WORX؟</h2>'),
     ('From design to delivery, your satisfaction is our top priority.', 'من التصميم حتى التسليم، رضاك هو أولويتنا الأولى.'),
+    ('alt="Two WORX installers fitting floating shelves above a cabinet"', 'alt="اثنان من فنيي تركيب WORX يركّبان رفوفاً معلقة فوق خزانة"'),
     ('aria-label="WORX team members installing a kitchen sink"', 'aria-label="فريق WORX أثناء تركيب حوض مطبخ"'),
+    ('<strong>Our team at work</strong><span>Installation in progress</span>', '<strong>فريقنا أثناء العمل</strong><span>أعمال التركيب</span>'),
     ('<h3>Licensed Contractors</h3>', '<h3>مقاولون مرخّصون</h3>'),
     ('As a company dedicated to providing great service, it is important to us to deliver unparalleled workmanship on every assignment. We are accredited, licensed, bonded, and insured. With experience and expertise, we provide the support your project needs.',
      'كشركة تلتزم بتقديم أفضل خدمة، يهمنا أن نقدم جودة تنفيذ لا مثيل لها في كل مشروع. نحن معتمدون ومرخّصون ومؤمَّن علينا، وبخبرتنا وتخصصنا نقدم لمشروعك كل الدعم الذي يحتاجه.'),
