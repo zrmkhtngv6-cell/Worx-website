@@ -170,7 +170,7 @@ PAIRS = [
     ('<strong>Salsabil Mohamed</strong><span>Social Media Interior Designer</span>', '<strong>سلسبيل محمد</strong><span>مصممة ديكور داخلي للسوشيال ميديا</span>'),
     ('<strong>Nada Alsahhar</strong><span>Customer Service</span>', '<strong>ندى السحار</strong><span>خدمة العملاء</span>'),
     ('<strong>Al Sayed Ibrahim</strong><span>Interior Designer</span>', '<strong>السيد إبراهيم</strong><span>مصمم ديكور داخلي</span>'),
-    ('<span class="initials">AA</span><strong>Abd-Allah</strong><span>Price Estimation Accountant</span>', '<span class="initials">ع</span><strong>عبدالله</strong><span>محاسب تسعير</span>'),
+    ('<span class="initials">AA</span><strong>Abd-Allah Fekry</strong><span>Price Estimation Accountant</span>', '<span class="initials">ع</span><strong>عبدالله فكري</strong><span>محاسب تسعير</span>'),
     ('<strong>Ahmad Salah</strong><span>Purchases</span>', '<strong>أحمد صلاح</strong><span>المشتريات</span>'),
 
     # FAQ
