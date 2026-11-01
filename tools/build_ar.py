@@ -153,7 +153,7 @@ PAIRS = [
     ('<h2>What our clients say</h2>', '<h2>ماذا يقول عملاؤنا</h2>'),
 
     # Team
-    ('<h3 class="team-group__title">Engineers &amp; Leaders</h3>', '<h3 class="team-group__title">المهندسون والقيادات</h3>'),
+    ('<h3 class="team-group__title">Engineers &amp; Designers</h3>', '<h3 class="team-group__title">المهندسون والمصممون</h3>'),
     ('<h3 class="team-group__title">Factory Team</h3>', '<h3 class="team-group__title">فريق المصنع</h3>'),
     ('<h3 class="team-group__title">Finance Team</h3>', '<h3 class="team-group__title">فريق الحسابات</h3>'),
     ('<h3 class="team-group__title">Social Media Team</h3>', '<h3 class="team-group__title">فريق السوشيال ميديا</h3>'),
