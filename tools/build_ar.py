@@ -156,7 +156,7 @@ PAIRS = [
     ('<h3 class="team-group__title">Technicians &amp; Installers</h3>', '<h3 class="team-group__title">الفنيون وفريق التركيب</h3>'),
     ('<strong>Khaled Mostafa</strong><span>Technician Team Head</span>', '<strong>خالد مصطفى</strong><span>رئيس فريق الفنيين</span>'),
     ('<strong>Magdy Ibrahim</strong><span>Lead Installer</span>', '<strong>مجدي إبراهيم</strong><span>رئيس فريق التركيب</span>'),
-    ('<strong>Islam Saeed</strong><span>Accounting Specialist</span>', '<strong>إسلام سعيد</strong><span>أخصائي حسابات</span>'),
+    ('<strong>Islam Saeed</strong><span>Accountant</span>', '<strong>إسلام سعيد</strong><span>محاسب</span>'),
     ('<h3 class="team-group__title">Finance Team</h3>', '<h3 class="team-group__title">فريق الحسابات</h3>'),
     ('<h3 class="team-group__title">Administration</h3>', '<h3 class="team-group__title">الإدارة</h3>'),
     ('<h3 class="team-group__title">Social Media Team</h3>', '<h3 class="team-group__title">فريق السوشيال ميديا</h3>'),
