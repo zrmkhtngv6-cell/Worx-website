@@ -167,7 +167,7 @@ PAIRS = [
     ('<strong>Muhammed Mahmoud</strong><span>Warehouse Manager</span>', '<strong>محمد محمود</strong><span>مسؤول المخزن</span>'),
     ('<strong>Youssef Shaaban</strong><span>Factory Manager</span>', '<strong>يوسف شعبان</strong><span>مدير المصنع</span>'),
     ('<strong>Amr Mohy</strong><span>Installation &amp; Inspection Engineer</span>', '<strong>عمرو محيي</strong><span>مهندس التركيب والمعاينة</span>'),
-    ('<strong>Mahmoud Radwan</strong><span>Senior Design Engineer</span>', '<strong>محمود رضوان</strong><span>كبير مهندسي التصميم</span>'),
+    ('<strong>Mahmoud Radwan</strong><span>Senior Kitchen Design Engineer</span>', '<strong>محمود رضوان</strong><span>كبير مهندسي تصميم المطابخ</span>'),
     ('<strong>Esraa Alsahar</strong><span>Content Creator &amp; Social Media Specialist</span>', '<strong>إسراء الساحر</strong><span>صانعة محتوى وأخصائية سوشيال ميديا</span>'),
     ('<strong>Basma Ashraf</strong><span>Business Development</span>', '<strong>بسمة أشرف</strong><span>تطوير الأعمال</span>'),
     ('<strong>Mahmoud Mostafa</strong><span>Head of Accounting</span>', '<strong>محمود مصطفى</strong><span>رئيس قسم الحسابات</span>'),
