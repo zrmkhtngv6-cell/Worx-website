@@ -35,7 +35,7 @@ PAIRS = [
     ('<a href="#team">Team</a>', '<a href="#team">فريقنا</a>'),
     ('<a href="#reviews">Reviews</a>', '<a href="#reviews">آراء العملاء</a>'),
     ('<a href="#contact">Contact</a>', '<a href="#contact">تواصل معنا</a>'),
-    ('class="btn btn--dark nav__cta">Free Quote</a>', 'class="btn btn--dark nav__cta">عرض سعر مجاني</a>'),
+    ('class="btn btn--dark nav__cta">Free Online Quote</a>', 'class="btn btn--dark nav__cta">عرض سعر مجاني أونلاين</a>'),
     ('<a href="ar.html" class="lang-switch" lang="ar" hreflang="ar">عربي</a>',
      '<a href="index.html" class="lang-switch" lang="en" hreflang="en">English</a>'),
     ('aria-label="Open menu"', 'aria-label="فتح القائمة"'),
@@ -46,7 +46,7 @@ PAIRS = [
     ('<h1>Your fantasies,<br><em>our realities.</em></h1>', '<h1>خيالكم،<br><em>واقعنا.</em></h1>'),
     ('Custom kitchens and dressing rooms — designed, built and installed by our dedicated team.',
      'مطابخ وغرف ملابس حسب الطلب — تصميم وتصنيع وتركيب بأيدي فريقنا المتخصص.'),
-    ('class="btn btn--light">Get a free quote</a>', 'class="btn btn--light">اطلب عرض سعر مجاني</a>'),
+    ('class="btn btn--light">Get a free online quote</a>', 'class="btn btn--light">اطلب عرض سعر مجاني أونلاين</a>'),
     ('class="btn btn--ghost">See our work</a>', 'class="btn btn--ghost">شاهد أعمالنا</a>'),
 
     # Why WORX
@@ -195,7 +195,7 @@ PAIRS = [
 
     # Contact
     ('<p class="eyebrow eyebrow--light">Contact</p>', '<p class="eyebrow eyebrow--light">تواصل معنا</p>'),
-    ('<h2>Get a free quote</h2>', '<h2>اطلب عرض سعر مجاني</h2>'),
+    ('<h2>Get a free online quote</h2>', '<h2>اطلب عرض سعر مجاني أونلاين</h2>'),
     ('We strive to be in constant communication with our customers until the job is done. To get a free quote, or if you have questions or special requests, just drop us a line. We look forward to serving you!',
      'نحرص على التواصل المستمر مع عملائنا حتى انتهاء العمل. للحصول على عرض سعر مجاني، أو إذا كانت لديك أسئلة أو طلبات خاصة، راسلنا. يسعدنا خدمتك!'),
     ('<dt>Showroom</dt><dd>G 32 AB Park Mall, 90th St, New Cairo</dd>', '<dt>المعرض</dt><dd><bdi dir="ltr">G 32 AB</bdi> بارك مول، شارع التسعين، القاهرة الجديدة</dd>'),
