@@ -100,6 +100,7 @@ PAIRS = [
     ('aria-pressed="false">Details</button>', 'aria-pressed="false">تفاصيل</button>'),
     ('aria-pressed="false">Living</button>', 'aria-pressed="false">معيشة</button>'),
     ('aria-pressed="false">Bathrooms</button>', 'aria-pressed="false">حمامات</button>'),
+    ('alt="White kitchen with oven tower, sliding barn door and wooden worktop"', 'alt="مطبخ أبيض ببرج أفران وباب منزلق وسطح خشبي"'),
     ('alt="Blush and oak U-shaped kitchen with granite worktop and wooden bar"', 'alt="مطبخ وردي فاتح وخشب البلوط على شكل U بسطح جرانيت وبار خشبي"'),
     ('alt="Greige kitchen with fluted upper cabinets and granite backsplash"', 'alt="مطبخ رمادي بيج بخزائن علوية مضلّعة وتكسية جرانيت"'),
     ('alt="Walnut and charcoal kitchen with lit glass display cabinet"', 'alt="مطبخ من خشب الجوز والفحمي مع خزانة عرض زجاجية مضاءة"'),
