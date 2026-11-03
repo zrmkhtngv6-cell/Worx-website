@@ -209,7 +209,7 @@ PAIRS = [
     ('<h3 class="team-group__title">Finance Team</h3>', '<h3 class="team-group__title">فريق الحسابات</h3>'),
     ('<h3 class="team-group__title">Administration</h3>', '<h3 class="team-group__title">الإدارة</h3>'),
     ('<h3 class="team-group__title">Graphic Design</h3>', '<h3 class="team-group__title">التصميم الجرافيكي</h3>'),
-    ('<span class="initials">MR</span><strong>Menna Roshdi</strong><span>Lead Graphic Designer</span>', '<span class="initials">م</span><strong>منة رشدي</strong><span>كبيرة مصممي الجرافيك</span>'),
+    ('<strong>Menna Roshdi</strong><span>Lead Graphic Designer</span>', '<strong>منة رشدي</strong><span>كبيرة مصممي الجرافيك</span>'),
     ('<h3 class="team-group__title">Social Media Team</h3>', '<h3 class="team-group__title">فريق السوشيال ميديا</h3>'),
     ('<p class="eyebrow">Our Team</p>', '<p class="eyebrow">فريقنا</p>'),
     ('<h2>The people behind WORX</h2>', '<h2>الفريق وراء WORX</h2>'),
