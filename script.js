@@ -139,6 +139,30 @@ const videoObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.25 });
 loopVideos.forEach(v => videoObserver.observe(v));
 
+// WORX Kids links: leave empty to show "Coming soon"; add the address to send visitors there
+const KIDS_LINKS = {
+  kids: '', // e.g. 'https://worxkids.com'
+  shop: '', // e.g. 'https://shop.worxkids.com'
+};
+const soon = document.getElementById('soon');
+const closeSoon = () => { soon.hidden = true; };
+document.querySelectorAll('[data-soon]').forEach(btn => {
+  const url = KIDS_LINKS[btn.dataset.soon];
+  if (url) {
+    btn.href = url;
+    btn.target = '_blank';
+    btn.rel = 'noopener';
+    return;
+  }
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    soon.hidden = false;
+    soon.querySelector('.soon__close').focus();
+  });
+});
+soon.addEventListener('click', e => { if (e.target === soon || e.target.classList.contains('soon__close')) closeSoon(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !soon.hidden) closeSoon(); });
+
 // Quote form → WhatsApp
 document.getElementById('quoteForm').addEventListener('submit', e => {
   e.preventDefault();
