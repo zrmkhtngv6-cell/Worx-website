@@ -33,8 +33,8 @@
       label: ['Showroom location', 'عنوان المعرض'],
       keys: ['where', 'location', 'address', 'showroom', 'visit', 'map', 'directions', 'park mall', 'new cairo', 'فين', 'عنوان', 'العنوان', 'مكان', 'المعرض', 'معرض', 'لوكيشن', 'خريطة', 'بارك مول', 'التجمع'],
       answer: [
-        'Our showroom is at G 32 AB, Park Mall, 90th Street, New Cairo. You’re welcome to visit any day from 12pm to 11:45pm.',
-        'معرضنا في G 32 AB بارك مول، شارع التسعين، القاهرة الجديدة. أهلاً بيك أي يوم من 12 ظهراً لحد 11:45 مساءً.',
+        'Our showroom is at G 32 AB, Park Mall, 90th Street, New Cairo. You’re welcome to visit Sunday to Thursday from 10am to 11pm, and Friday & Saturday from 3pm to 11pm.',
+        'معرضنا في G 32 AB بارك مول، شارع التسعين، القاهرة الجديدة. أهلاً بيك من الأحد للخميس من 10 الصبح لحد 11 بالليل، والجمعة والسبت من 3 العصر لحد 11 بالليل.',
       ],
       action: 'map',
     },
@@ -43,8 +43,8 @@
       label: ['Opening hours', 'مواعيد العمل'],
       keys: ['hour', 'open', 'close', 'time', 'when', 'friday', 'today', 'مواعيد', 'ميعاد', 'امتى', 'إمتى', 'مفتوح', 'بتفتحوا', 'بتقفلوا', 'الجمعة', 'النهارده'],
       answer: [
-        'We’re open every day of the week, from 12pm to 11:45pm.',
-        'مفتوحين كل أيام الأسبوع من 12 ظهراً لحد 11:45 مساءً.',
+        'We’re open Sunday to Thursday from 10am to 11pm, and Friday & Saturday from 3pm to 11pm.',
+        'مفتوحين من الأحد للخميس من 10 الصبح لحد 11 بالليل، والجمعة والسبت من 3 العصر لحد 11 بالليل.',
       ],
     },
     {
@@ -90,8 +90,8 @@
       label: ['Talk to the team', 'كلّم الفريق'],
       keys: ['contact', 'call', 'phone', 'number', 'whatsapp', 'talk', 'human', 'person', 'agent', 'رقم', 'تليفون', 'تلفون', 'موبايل', 'اتصل', 'واتس', 'واتساب', 'كلم', 'أكلم', 'اكلم'],
       answer: [
-        'You can reach our team on WhatsApp or by phone at +20 111 777 6327 — every day, 12pm to 11:45pm.',
-        'تقدر تكلم فريقنا على واتساب أو تليفون على 01117776327 — كل يوم من 12 ظهراً لحد 11:45 مساءً.',
+        'You can reach our team on WhatsApp or by phone at +20 111 777 6327 — Sunday to Thursday 10am–11pm, Friday & Saturday 3pm–11pm.',
+        'تقدر تكلم فريقنا على واتساب أو تليفون على 01117776327 — من الأحد للخميس من 10 الصبح لحد 11 بالليل، والجمعة والسبت من 3 العصر لحد 11 بالليل.',
       ],
       action: 'whatsapp',
     },
