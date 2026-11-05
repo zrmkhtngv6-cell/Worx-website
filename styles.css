@@ -336,11 +336,6 @@ html[lang="ar"] .chat__chip, html[lang="ar"] .chat__form input { font-family: "C
 
 /* WORX Kids (coming soon) */
 .nav a.nav__kids { color: var(--wood-dark); font-weight: 600; }
-.kids__cards { display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); max-width: 820px; margin-inline: auto; }
-.kids__card { position: relative; padding: 2.2rem 1.8rem 2rem; border: 1px solid rgba(212,175,55,.45); border-radius: var(--radius); background: rgba(255,255,255,.03); text-align: center; }
-.kids__card h3 { font-size: 1.6rem; margin-top: .6rem; }
-.kids__card p { color: rgba(255,255,255,.7); margin: 0 0 1.6rem; }
-.kids__badge { display: inline-block; padding: .3rem .8rem; border-radius: 999px; background: var(--gold); color: var(--ink); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .soon { position: fixed; inset: 0; z-index: 110; background: rgba(0,0,0,.6); display: grid; place-items: center; padding: 16px; }
 .soon[hidden] { display: none; }
 .soon__box { position: relative; width: min(380px, 100%); background: #fff; border-radius: 18px; padding: 2.4rem 2rem 2rem; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,.3); }

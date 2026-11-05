@@ -156,7 +156,7 @@ document.querySelectorAll('[data-soon]').forEach(btn => {
   }
   btn.addEventListener('click', e => {
     e.preventDefault();
-    document.getElementById('soonLabel').textContent = btn.closest('.kids__card').querySelector('h3').textContent;
+    document.getElementById('soonLabel').textContent = btn.textContent.trim();
     soon.hidden = false;
     soon.querySelector('.soon__close').focus();
   });
