@@ -294,3 +294,39 @@ html[lang="ar"] .btn, html[lang="ar"] .nav a:not(.btn), html[lang="ar"] .filter 
 /* Faint triangle grid behind dark sections, like the showroom's triangle wall */
 .section--dark { position: relative; isolation: isolate; }
 .section--dark::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .08; pointer-events: none; background: url("assets/img/triangle-grid.svg?v=3") 0 0 / 60px 104px; }
+
+/* Chat assistant */
+.chat { position: fixed; inset-inline-end: 16px; bottom: 16px; z-index: 90; }
+.chat__bubble { width: 60px; height: 60px; border-radius: 50%; border: 0; background: var(--ink); color: var(--gold); display: grid; place-items: center; cursor: pointer; box-shadow: 0 10px 28px rgba(0,0,0,.3); transition: transform .2s; }
+.chat__bubble:hover { transform: scale(1.06); }
+.chat__bubble svg { width: 28px; height: 28px; fill: currentColor; }
+.chat.is-open .chat__bubble { display: none; }
+.chat__panel { position: absolute; inset-inline-end: 0; bottom: 0; width: min(370px, calc(100vw - 32px)); height: min(560px, calc(100vh - 100px)); background: #fff; border-radius: 18px; box-shadow: 0 20px 60px rgba(0,0,0,.28); display: flex; flex-direction: column; overflow: hidden; }
+.chat__panel[hidden] { display: none; }
+.chat__head { display: flex; align-items: center; gap: .75rem; padding: .9rem 1rem; background: var(--ink); color: #fff; }
+.chat__logo { height: 26px; width: auto; }
+.chat__head div { flex: 1; line-height: 1.25; }
+.chat__head strong { display: block; font-size: .95rem; }
+.chat__head small { color: var(--gold); font-size: .75rem; }
+.chat__close { background: none; border: 0; color: #fff; font-size: 1.8rem; line-height: 1; cursor: pointer; padding: 0 .25rem; }
+.chat__log { flex: 1; overflow-y: auto; padding: 1rem; display: flex; flex-direction: column; gap: .6rem; background: var(--cream); }
+.chat__msg { max-width: 85%; padding: .65rem .9rem; border-radius: 14px; font-size: .92rem; line-height: 1.5; white-space: pre-wrap; }
+.chat__msg--bot { align-self: flex-start; background: #fff; color: var(--ink); border-end-start-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+.chat__msg--user { align-self: flex-end; background: var(--ink); color: #fff; border-end-end-radius: 4px; }
+.chat__msg--typing { color: var(--muted); letter-spacing: .2em; }
+.chat__action { align-self: flex-start; display: inline-block; padding: .55rem 1rem; border-radius: 999px; background: var(--gold); color: var(--ink); font-weight: 600; font-size: .85rem; text-decoration: none; }
+.chat__action:hover { filter: brightness(1.05); }
+.chat__chips { display: flex; gap: .4rem; overflow-x: auto; padding: .6rem .75rem; border-top: 1px solid var(--line); scrollbar-width: none; }
+.chat__chips::-webkit-scrollbar { display: none; }
+.chat__chip { flex: none; padding: .45rem .8rem; border-radius: 999px; border: 1px solid var(--line); background: #fff; font: 500 .8rem var(--sans); cursor: pointer; white-space: nowrap; }
+.chat__chip:hover { border-color: var(--gold); }
+.chat__form { display: flex; gap: .5rem; padding: .6rem .75rem .75rem; }
+.chat__form input { flex: 1; min-width: 0; border: 1px solid var(--line); border-radius: 999px; padding: .65rem 1rem; font: 400 .95rem var(--sans); outline: none; }
+.chat__form input:focus { border-color: var(--gold); }
+.chat__form button { width: 42px; height: 42px; flex: none; border: 0; border-radius: 50%; background: var(--ink); color: var(--gold); display: grid; place-items: center; cursor: pointer; }
+.chat__form button svg { width: 18px; height: 18px; fill: currentColor; }
+[dir="rtl"] .chat__form button svg { transform: scaleX(-1); }
+html[lang="ar"] .chat__chip, html[lang="ar"] .chat__form input { font-family: "Cairo", var(--sans); }
+/* Keep the phone call button above the chat bubble */
+@media (max-width: 900px) { .fab { bottom: 88px; } }
+@media (max-width: 480px) { .chat__panel { height: calc(100vh - 32px); } }
