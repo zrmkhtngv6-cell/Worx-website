@@ -335,7 +335,13 @@ html[lang="ar"] .chat__chip, html[lang="ar"] .chat__form input { font-family: "C
 @media (max-width: 480px) { .chat__panel { height: calc(100vh - 32px); } }
 
 /* WORX Kids (coming soon) */
-.nav a.nav__kids { color: var(--wood-dark); font-weight: 600; }
+.nav a.nav__kids { display: inline-flex; align-items: center; }
+.nav a.nav__kids::after { display: none; }
+.nav__kids img { height: 22px; width: auto; transition: transform .2s; }
+.nav a.nav__kids:hover img { transform: scale(1.06); }
+@media (min-width: 901px) and (max-width: 1120px) { .nav__kids img { height: 17px; } }
+@media (min-width: 901px) and (max-width: 990px) { .nav__kids img { height: 14px; } }
+@media (max-width: 900px) { .nav__kids img { height: 22px; } }
 .soon { position: fixed; inset: 0; z-index: 110; background: rgba(0,0,0,.6); display: grid; place-items: center; padding: 16px; }
 .soon[hidden] { display: none; }
 .soon__box { position: relative; width: min(380px, 100%); background: #fff; border-radius: 18px; padding: 2.4rem 2rem 2rem; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,.3); }

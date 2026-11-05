@@ -156,7 +156,7 @@ document.querySelectorAll('[data-soon]').forEach(btn => {
   }
   btn.addEventListener('click', e => {
     e.preventDefault();
-    document.getElementById('soonLabel').textContent = btn.textContent.trim();
+    document.getElementById('soonLabel').textContent = btn.textContent.trim() || btn.querySelector('img').alt;
     soon.hidden = false;
     soon.querySelector('.soon__close').focus();
   });
