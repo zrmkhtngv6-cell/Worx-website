@@ -143,7 +143,6 @@ PAIRS = [
     ('alt="Marble bathroom vanity with gold-trimmed drawers"', 'alt="وحدة حوض رخامية بأدراج بإطار ذهبي"'),
     ('alt="L-shaped grey gloss and oak kitchen with black fridge"', 'alt="مطبخ على شكل L باللون الرمادي اللامع وخشب البلوط مع ثلاجة سوداء"'),
     ('alt="Terracotta vessel sink on a wood and burgundy vanity"', 'alt="حوض فخاري برتقالي على وحدة من الخشب والعنابي"'),
-    ('alt="Coffee corner with lit oak shelving and marble counter"', 'alt="ركن قهوة برفوف مضاءة من خشب البلوط وسطح رخامي"'),
     ('alt="White tall units with a lit oak coffee niche and built-in ovens"', 'alt="وحدات طويلة بيضاء مع ركن قهوة مضاء وأفران مدمجة"'),
     ('alt="White gloss kitchen with a black marble island sink"', 'alt="مطبخ أبيض لامع مع جزيرة رخام أسود وحوض"'),
     ('alt="Beige gloss kitchenette with a lit black-framed glass cabinet"', 'alt="مطبخ صغير بيج لامع مع خزانة زجاجية مضاءة بإطار أسود"'),
